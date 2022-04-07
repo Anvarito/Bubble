@@ -105,3 +105,6 @@ Assets/SDKs/Leap/Plugins/LeapMotion/Modules/Hands/Hand Assets/*
 Assets/SDKs/Leap/Plugins/LeapMotion/Modules/Hands/Scripts/HandBinder/*
 
 .idea/
+ProjectSettings/
+Packages/
+.vsconfig
