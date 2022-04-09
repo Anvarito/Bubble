@@ -202,7 +202,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f4f2470850e52824cabcf08744c84ecc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.38039216}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -408,7 +408,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.24705882, g: 0.67058825, b: 0.49019608, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -950,7 +950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ae5a291059c3d4991319ff2909d3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BubblePrefab: {fileID: 3728207387591939016, guid: bc1a3f8b2e3117c4cb97d55faaea92c3, type: 3}
+  BubblePrefab: {fileID: 933106907772137151, guid: 4d73a9f7417140d49a9815769a8aef6d, type: 3}
   time: {fileID: 1612853691}
   currentScore: {fileID: 343530141}
   retryPanel: {fileID: 1830753616}

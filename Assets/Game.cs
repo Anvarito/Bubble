@@ -37,7 +37,7 @@ public class Game : MonoBehaviour
         currentTime = 0;
         speedKoeff = 0;
         isTimeOut = false;
-        InvokeRepeating("Spawn", 0.2f, 0.2f);
+        //InvokeRepeating("Spawn", 0.2f, 0.2f);
     }
 
     [ContextMenu("Spawn")]
@@ -65,13 +65,23 @@ public class Game : MonoBehaviour
         var spawnAreaY = screenLeftBottom.y - halfWidht;
         bubble.transform.position = new Vector2(spawnAreaX, spawnAreaY);
     }
-
+    float spawnTimer = 0;
     void Update()
     {
         if (!isTimeOut)
         {
             GameInput();
             TimerCounting();
+
+            if (spawnTimer >= 0.2f)
+            {
+                Spawn();
+                spawnTimer = 0;
+            }
+            else
+            {
+                spawnTimer += Time.deltaTime;
+            }
         }
     }
 

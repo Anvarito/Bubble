@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 //[RequireComponent(typeof(BoxCollider2D))]
 public class Bubble : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private MeshRenderer meshRenderer;
     [SerializeField] private BoxCollider boxCollider;
     [SerializeField] private float speedMin = 2; // 2 , 4
     [SerializeField] private float speedMax = 4; // 2 , 4
@@ -13,7 +13,7 @@ public class Bubble : MonoBehaviour
 
     private float currentSpeed;
 
-    [SerializeField] private float lifeTime = 3;
+    private float lifeTime = 5;
 
     [SerializeField] private float minScale = 0.5f;
     [SerializeField] private float maxScale = 1.2f;
@@ -44,7 +44,7 @@ public class Bubble : MonoBehaviour
         currentSpeed = Mathf.Lerp(speedMin, speedMax, speedKoeff);
         point = (int)Mathf.Lerp(1, 5, speedKoeff);
 
-        spriteRenderer.color = Random.ColorHSV();
+        meshRenderer.material.color = Random.ColorHSV();
 
         StartCoroutine(DestroyBubble());
     }
